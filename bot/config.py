@@ -3,30 +3,30 @@ import os
 
 class Config:
 
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
+    BOT_TOKEN = os.environ.get("1938198458:AAFCi1qkTeMTHCamqHacxGuSGXsuamGGIl0")
 
     SESSION_NAME = os.environ.get("SESSION_NAME", ":memory:")
 
-    API_ID = int(os.environ.get("API_ID"))
+    API_ID = int(os.environ.get("4289473"))
 
-    API_HASH = os.environ.get("API_HASH")
+    API_HASH = os.environ.get("6c829cf0df94349245c1dc156fef1132")
 
-    CLIENT_ID = os.environ.get("CLIENT_ID")
+    CLIENT_ID = os.environ.get("611089228236-ptnf0vk3m8aousuaplr5u1fbvs67tqpb.apps.googleusercontent.com")
 
-    CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
+    CLIENT_SECRET = os.environ.get("4zoObnH0QOl5KdzguXfcqnaS")
 
-    BOT_OWNER = int(os.environ.get("BOT_OWNER"))
+    BOT_OWNER = int(os.environ.get("1722652154"))
 
-    AUTH_USERS_TEXT = os.environ.get("AUTH_USERS", "")
+    AUTH_USERS_TEXT = os.environ.get("1722652154", "")
 
-    AUTH_USERS = [BOT_OWNER, 374321319] + (
+    AUTH_USERS = [BOT_OWNER] + (
         [int(user.strip()) for user in AUTH_USERS_TEXT.split(",")]
         if AUTH_USERS_TEXT
         else []
     )
 
     VIDEO_DESCRIPTION = (
-        os.environ.get("VIDEO_DESCRIPTION", "").replace("<", "").replace(">", "")
+        os.environ.get("VIDEO_DESCRIPTION", "Must Join on Telegram @dvmoviesbackup").replace("<", "").replace(">", "")
     )
 
     VIDEO_CATEGORY = (
